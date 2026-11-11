@@ -1,0 +1,133 @@
+.category-section {
+  padding: 3rem 1.5rem 1rem;
+  background-color: #ffffff;
+}
+
+.category-container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 2.2rem;
+}
+
+.section-tag {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: #ea580c;
+  background-color: #ffedd5;
+  padding: 0.35rem 0.85rem;
+  border-radius: 99px;
+  margin-bottom: 0.6rem;
+}
+
+.section-title {
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.03em;
+  margin: 0 0 0.5rem;
+}
+
+.section-desc {
+  font-size: 1.05rem;
+  color: #64748b;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Category horizontal list */
+.category-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.category-item-btn {
+  background: #ffffff;
+  border: 2px solid #f1f5f9;
+  border-radius: 20px;
+  padding: 1rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  cursor: pointer;
+  min-width: 110px;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.category-icon-box {
+  width: 54px;
+  height: 54px;
+  border-radius: 16px;
+  background-color: #fff7ed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease;
+}
+
+.category-emoji {
+  font-size: 1.8rem;
+}
+
+.category-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #334155;
+  transition: color 0.2s ease;
+}
+
+/* Hover and Active State */
+.category-item-btn:hover {
+  transform: translateY(-4px);
+  border-color: #fed7aa;
+  box-shadow: 0 10px 20px -5px rgba(255, 87, 34, 0.15);
+}
+
+.category-item-btn.active {
+  background: linear-gradient(135deg, #ff5722 0%, #ea580c 100%);
+  border-color: transparent;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(255, 87, 34, 0.35);
+}
+
+.category-item-btn.active .category-icon-box {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.category-item-btn.active .category-name {
+  color: #ffffff;
+}
+
+@media (max-width: 640px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .category-list {
+    gap: 0.75rem;
+  }
+
+  .category-item-btn {
+    min-width: 90px;
+    padding: 0.75rem 0.85rem;
+  }
+
+  .category-icon-box {
+    width: 44px;
+    height: 44px;
+  }
+
+  .category-emoji {
+    font-size: 1.4rem;
+  }
+}

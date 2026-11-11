@@ -1,0 +1,70 @@
+.why-section {
+  padding: 4.5rem 1.5rem;
+  background-color: #f8fafc;
+}
+
+.why-container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.why-card {
+  background-color: #ffffff;
+  border-radius: 24px;
+  padding: 2.25rem 1.75rem;
+  text-align: center;
+  border: 1px solid #f1f5f9;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.why-card:hover {
+  transform: translateY(-8px);
+  border-color: #fed7aa;
+  box-shadow: 0 16px 32px -8px rgba(255, 87, 34, 0.15);
+}
+
+.why-icon-bubble {
+  width: 72px;
+  height: 72px;
+  border-radius: 22px;
+  background: radial-gradient(circle at 30% 30%, #fff7ed 0%, #ffedd5 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 6px 16px rgba(255, 87, 34, 0.12);
+  transition: transform 0.3s ease;
+}
+
+.why-card:hover .why-icon-bubble {
+  transform: scale(1.1) rotate(6deg);
+}
+
+.why-emoji {
+  font-size: 2.2rem;
+}
+
+.why-card-title {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 0.75rem 0;
+  letter-spacing: -0.02em;
+}
+
+.why-card-desc {
+  font-size: 0.92rem;
+  color: #64748b;
+  line-height: 1.6;
+  margin: 0;
+}
